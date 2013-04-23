@@ -1,0 +1,8 @@
+from django.db import models
+# Creamos el modelo aqui.
+class Bebida(models.Model):
+ nombre=modelsCharField(max_length=50)
+ ingredientes=models.TextField()
+ preparacion=models.TextField()
+ def __unicode__(self):
+  return self.nombre

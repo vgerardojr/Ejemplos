@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+ <head>
+ <title>Lista de recetas de ejemplo</title>
+ <meta charset='UTF-8'>
+ </head>
+
+ <body>
+ 	<h1>Recetario</h1>
+ 	{% for elemento in lista %}
+  <ul>
+   <li>------------------------</li>
+   <li><strong>{{elemento.titulo}}</strong></li>
+   <li>------------------------</li>
+   <li>{{elemento.ingredientes}}</li>
+   <li>{{elemento.preparacion}}</li>
+   <li>{{elemento.imagen}}</li>
+   <li>------------------------</li>
+  </ul>
+  {% endfor %}
+ </body>
+</html>
