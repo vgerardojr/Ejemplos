@@ -3,5 +3,5 @@ from principal.models import Receta
 from django.shortcuts import render_to_response
 
 def lista_recetas(request):
-	recetas = Receta.objects.all()
+	recetas = Receta.objects.exclude(ingredientes__startswith='d')
 	return render_to_response('lista_recetas.html',{'lista':recetas})
