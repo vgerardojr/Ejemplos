@@ -18,5 +18,5 @@ urlpatterns = patterns('',
  url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Elimine el comentario de la siguiente línea para habilitar el administrador:
- url(r'^admin/', include(admin.site.urls)),
+ url(r'^administrador/', include(admin.site.urls)),
 )
