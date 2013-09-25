@@ -15,9 +15,9 @@
    <li>e------------------------e</li>
    <li>{{elemento.ingredientes}}</li>
    <li>{{elemento.preparacion}}</li>
-   <li>{{elemento.imagen}}</li>
+   <li>{{MEDIA_ROOT}}{{elemento.imagen}}</li>
    <li>------------------------</li>
-   <div>{{elemento.imagen}}</div>
+   <li><img src='{{elemento.imagen}}'></li>
   </ul>
   {% endfor %}
  </body>

@@ -52,7 +52,7 @@ USE_TZ = True
 
 # Ruta del sistema de archivos absoluta al directorio que contiene los archivos subidos por los usuarios.
 # Ejemplo: "/var/www/example.com/media/"
-MEDIA_ROOT = os.path.join(RUTA_PROYECTO,'carga')
+MEDIA_ROOT = os.path.join(RUTA_PROYECTO,'recetario/carga/recetas')
 
 # URL que controla los medios de comunicación sirven de MEDIA_ROOT. Asegúrese de utilizar una
 # barra diagonal.
